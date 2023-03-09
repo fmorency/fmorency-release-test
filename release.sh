@@ -21,7 +21,7 @@ export GIT_CLIFF_TEMPLATE="\
 	{% for group, commits in commits | group_by(attribute=\"group\") %}
 	{{ group | upper_first }}\
 	{% for commit in commits %}
-		- {% if commit.breaking %}(breaking) {% endif %}{{ commit.message | upper_first }} ({{ commit.id | truncate(length=7, end=\"\") }})\
+		- {% if commit.breaking %}(breaking) {% endif %}{{ commit.message | upper_first }}\
 	{% endfor %}
 	{% endfor %}"
 changelog=$(git cliff --unreleased --strip all)
