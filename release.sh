@@ -14,10 +14,11 @@ sed -E -i "s/^version = .* $msg$/version = \"${1#v}\" $msg/" Cargo.toml
 # update the changelog
 sed -E -i "s/\s+\#\s(.*)\s\#\sreplace issue numbers/\\t\1/g" cliff.toml
 git cliff --tag "$1" >CHANGELOG.md
-git restore config/cliff.toml
+git restore cliff.toml
 git add -A && git commit -m "chore(release): prepare for $1"
 git show
 
 changelog=$(git cliff --unreleased --strip all)
 git tag -a "$1" -m "Release $1" -m "$changelog"
 echo "Done!"
+echo "Now push the commit (git push) and the tag (git push --tags)."
