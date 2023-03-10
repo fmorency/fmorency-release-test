@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4-rc.1] - 2023-03-10
+
+### Build
+
+- Commitlint configuration ([#11](https://github.com/fmorency/fmorency-release-test/issues/11))
+
 ## [1.0.3] - 2023-03-10
 
 ### Miscellaneous Tasks

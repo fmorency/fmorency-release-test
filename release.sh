@@ -6,6 +6,11 @@ if [ -z "$1" ]; then
 	exit
 fi
 
+# check version number is semver
+# regex taken from https://semver.org/
+SEMVER_REGEX='^(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
+echo "${1#v}" | grep -P $SEMVER_REGEX || { echo "${1#v} does not respect semver"; exit 1; }
+
 echo "Preparing $1..."
 # update the version
 msg="# managed by release.sh"
