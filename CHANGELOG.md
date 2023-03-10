@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2023-03-10
+
+### Miscellaneous Tasks
+
+- Add cargo metadata ([#10](https://github.com/fmorency/fmorency-release-test/issues/10))
+
 ## [1.0.2] - 2023-03-10
 
 ### Miscellaneous Tasks
