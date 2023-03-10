@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2-rc.1] - 2023-03-10
+
+### Documentation
+
+- [**breaking**] Breaking change test ([#9](https://github.com/fmorency/fmorency-release-test/issues/9))
+
 ## [1.0.1] - 2023-03-10
 
 ### Bug Fixes
