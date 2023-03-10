@@ -14,6 +14,7 @@ sed -E -i "s/^version = .* $msg$/version = \"${1#v}\" $msg/" Cargo.toml
 sed -E -i "s/\s+\#\s(.*)\s\#\sreplace issue numbers/\\t\1/g" cliff.toml
 git cliff --tag "$1" >CHANGELOG.md
 git restore cliff.toml
+cargo fetch
 git add -A && git commit -m "chore(release): prepare for $1"
 git show
 # generate a changelog for the tag message

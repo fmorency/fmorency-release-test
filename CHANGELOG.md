@@ -2,19 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2023-03-10
+
+### Bug Fixes
+
+- Remove commit id ([#8](https://github.com/fmorency/fmorency-release-test/issues/8))
+
 ## [1.0.0] - 2023-03-09
 
 ### Documentation
 
-- Add README.md (f5392fd)
+- Add README.md
 
 ### Features
 
-- Utility library ([#2](https://github.com/fmorency/fmorency-release-test/issues/2)) (76912c5)
-- Release script ([#6](https://github.com/fmorency/fmorency-release-test/issues/6)) (fb3f5f5)
+- Utility library ([#2](https://github.com/fmorency/fmorency-release-test/issues/2))
+- Release script ([#6](https://github.com/fmorency/fmorency-release-test/issues/6))
 
 ### Miscellaneous Tasks
 
-- Initial commit (7a036f7)
-- Add .idea to gitignore ([#5](https://github.com/fmorency/fmorency-release-test/issues/5)) (6d8cb67)
+- Initial commit
+- Add .idea to gitignore ([#5](https://github.com/fmorency/fmorency-release-test/issues/5))
 
